@@ -6,10 +6,10 @@ const Trending = () => {
       <div className="p-4">
         <p className="text-3xl font-bold text-white">Trending</p>
       </div>
-      <div className="flex">
+      <div className="grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-4  xl:grid-cols-5">
         {carosoul.map((item) => (
           <div
-            key={carosoul.id}
+            key={item.id}
             className="flex card card-compact m-14 w-48 bg-black shadow-xl"
           >
             <figure>

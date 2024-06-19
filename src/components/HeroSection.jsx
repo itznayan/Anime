@@ -6,9 +6,6 @@ import { useState } from "react";
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToSlide = (slidesIndex) => {
-    setCurrentIndex(slidesIndex);
-  };
   const handlePrevClick = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? carosoul.length - 1 : currentIndex - 1;
@@ -35,14 +32,20 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
+          <div className="max-lg:block hidden ">
+            <img
+              className="w-full h-full duration-300 bg-center bg-cover rounded-2xl"
+              src={carosoul[currentIndex].url}
+              alt=""
+            />
+          </div>
           <div
             style={{
               backgroundImage: `url(${carosoul[[currentIndex]].url})`,
             }}
             className="w-full h-full duration-300 bg-center bg-cover rounded-2xl col-span-1 md:mt-0 md:col-span-2 md:flex lg:mt-0 lg:col-span-5 lg:flex "
           ></div>
-
-          <div className="flex w-96  space-x-2">
+          <div className="flex lg:w-96  space-x-2">
             <button className="bg-blue-500 mt-2 group font-semibold hover:font-normal  hover:bg-blue-800 text-black hover:text-white p-2 hover:tracking-[2px] duration-300">
               Watch Now
               <span className="material-symbols-outlined relative group-hover:rotate-[180deg] duration-300 top-1.5 ">
