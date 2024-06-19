@@ -70,9 +70,15 @@ const Header = () => {
             </button>
           </li>
 
-          <li className="hidden 2xl:block py-6">Social Media Gap</li>
+          <li className="hidden 2xl:block py-4">
+            <div className="space-x-1">
+              <i className="ri-instagram-line ri-2x cursor-pointer"></i>
+              <i className="ri-discord-line ri-2x cursor-pointer"></i>
+              <i className="ri-telegram-2-line ri-2x cursor-pointer"></i>
+            </div>
+          </li>
 
-          <div className="flex space-x-8 -mt-2">
+          <div className="flex space-x-8 mb-2">
             <li className="group hidden cursor-pointer lg:block ">
               <img
                 className=" ml-8 size-10 mt-4 invert group-hover:invert group-hover:bg-black duration-500 rounded-full"
