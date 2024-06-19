@@ -10,7 +10,7 @@ const Trending = () => {
         {carosoul.map((item) => (
           <div
             key={item.id}
-            className="flex card card-compact m-14 w-48 bg-black shadow-xl"
+            className="flex card card-compact m-4 lg:m-14 w-48 bg-black shadow-xl"
           >
             <figure>
               <img src={item.url} alt={item.title} />
