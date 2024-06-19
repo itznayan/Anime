@@ -2,7 +2,6 @@ import carosoul from "./data/Carosoul";
 import right from "../assets/right.svg";
 import left from "../assets/left.svg";
 import { useState } from "react";
-import title from "./data/Carosoul";
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,7 +30,7 @@ const HeroSection = () => {
               <h1 className="max-w-2xl mb-4  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                 {carosoul[[currentIndex]].title}
               </h1>
-              <p className="max-w-2xl mb-6 overflow-hidden font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              <p className="max-w-2xl mb-6 overflow-hidden h-36 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 {carosoul[[currentIndex]].description}
               </p>
             </div>
@@ -44,15 +43,21 @@ const HeroSection = () => {
           ></div>
 
           <div className="flex w-96  space-x-2">
-            <button className="bg-blue-500 font-semibold hover:font-normal  hover:bg-blue-800 text-black hover:text-white p-2 hover:tracking-[2px] duration-300">
+            <button className="bg-blue-500 mt-2 group font-semibold hover:font-normal  hover:bg-blue-800 text-black hover:text-white p-2 hover:tracking-[2px] duration-300">
               Watch Now
+              <span className="material-symbols-outlined relative group-hover:rotate-[180deg] duration-300 top-1.5 ">
+                play_arrow
+              </span>
             </button>
-            <button className="bg-black  hover:bg-white hover:text-black text-white p-2 hover:tracking-[2px] duration-300">
+            <button className=" bg-black  mt-2 hover:bg-white group hover:text-black text-white p-2 hover:tracking-[2px] duration-300">
               Details
+              <span className="material-symbols-outlined relative group-hover:rotate-[180deg] duration-300 top-1.5 ">
+                chevron_right
+              </span>
             </button>
           </div>
         </div>
-        <div className="justify-start px-40 p-2 flex space-x-8">
+        <div className="justify-start mb-2 pb-10  px-40 flex space-x-8">
           <p
             onClick={handlePrevClick}
             className="bg-black cursor-pointer rounded-lg scale-125"

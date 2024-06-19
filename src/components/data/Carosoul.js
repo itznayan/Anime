@@ -20,6 +20,20 @@ const carosoul = [
     description:
       "The third season of Shinigami Bocchan to Kuro Maid. The Duke and Alice will have their fates collide as their untouchable relationship comes to its conclusion!",
   },
+  {
+    id: 4,
+    title: "Solo Leveling",
+    url: "https://sgimage.netmarble.com/images/netmarble/sololv/20240318/fxbt1710761341766.jpg",
+    description:
+      "Follows the adventures Sung Jinwoo in a world that is constantly threatened by monsters and the evil forces. In his battles Sung transforms himself from weakest hunter of all mankind to one of the strongest hunters in existence.",
+  },
+  {
+    id: 5,
+    title: "Jujutsu Kaisen",
+    url: "https://p325k7wa.twic.pics/high/jujutsu-kaisen/jujutsu-kaisen-cursed-clash/00-page-setup/JJK-header-mobile2.jpg?twic=v1/resize=760/step=10/quality=80",
+    description:
+      "The two active and invincible jujutsu sorcerers receive a commission from the key figure in the sorcery realm, Tengen, who mastered the immortality spell. They need to 'guard' and 'erase' for a girl called Amanai Riko, Tengen's match 'Star Plasma Vessel'.",
+  },
 ];
 
 export default carosoul;

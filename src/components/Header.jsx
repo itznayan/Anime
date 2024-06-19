@@ -56,7 +56,7 @@ const Header = () => {
           </div>
           <li className=" hidden sm:block">
             <input
-              className="sm:w-24 p-2 mt-4 h-10 xl:w-60 rounded-md shadow-2xl max-sm:block"
+              className="text-white sm:w-24 p-2 mt-4 h-10 xl:w-60 rounded-md shadow-2xl max-sm:block"
               type="text"
               placeholder="Enter Anime Name"
             />
